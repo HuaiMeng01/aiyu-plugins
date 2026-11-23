@@ -1,0 +1,67 @@
+{
+  "name": "爱语插件源",
+  "version": "1.1.0",
+  "updated_at": "2026-11-23",
+  "description": "个人维护的爱语插件索引，含官方示例与自研插件",
+  "plugins": [
+    {
+      "id": "pkg_hub",
+      "name": "插件源",
+      "version": "1.1.0",
+      "author": "HuaiMeng01",
+      "description": "在聊天里浏览、审查、获取本仓库的插件；内置多个 GitHub 代理自动回退",
+      "zip": "zips/pkg_hub_v1.1.0.zip",
+      "permissions": [
+        "register_instruction",
+        "inject_system_prompt",
+        "access_network"
+      ],
+      "repo": "https://github.com/HuaiMeng01/aiyu-plugins",
+      "sha256": "5ad798455ef12131ad466299ef91513de7061f703e684756f218c654fc0141a4",
+      "bytes": 7885
+    },
+    {
+      "id": "heart_love",
+      "name": "爱心代码",
+      "version": "1.1.0",
+      "author": "Aiyu官方",
+      "description": "AI 会用爱心代码向你表达爱意，弹出一段动画",
+      "zip": "zips/aiyu_heart_v1.1.0.zip",
+      "permissions": [
+        "inject_system_prompt",
+        "register_instruction"
+      ],
+      "sha256": "10bfd5ea1eb5358b23120ff3038bcf043a870a419a1906500fc6b327be7f74f9",
+      "bytes": 9765
+    },
+    {
+      "id": "image_downloader",
+      "name": "图片下载器",
+      "version": "1.0.0",
+      "author": "Aiyu官方",
+      "description": "AI 输出 <download_image:URL> 即可把网络图片下载并显示在聊天里",
+      "zip": "zips/aiyu_image_downloader_v1.0.0.zip",
+      "permissions": [
+        "access_network",
+        "write_chat_history",
+        "write_app_files",
+        "register_instruction"
+      ],
+      "sha256": "216dd429d34cd6ce5e99ae6dbddb84d718878bf7585579bf7c2b94ffa99c27b9",
+      "bytes": 1668
+    },
+    {
+      "id": "token_viewer",
+      "name": "Token 查看器",
+      "version": "2.2.1",
+      "author": "Aiyu官方",
+      "description": "实时查看每次对话的 token 用量，支持累计统计与费用计算",
+      "zip": "zips/aiyu_token_viewer_v2.2.1.zip",
+      "permissions": [
+        "display_floating_window"
+      ],
+      "sha256": "b12d356ea8ac6fb7735ef2217bb60178f64538ef98c7e89c9fdd83b036f86037",
+      "bytes": 22559
+    }
+  ]
+}
