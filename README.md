@@ -6,13 +6,13 @@
 
 **第一次（引导安装）**
 
-1. 下载 `zips/pkg_hub_v2.0.0.zip`
+1. 下载 `zips/pkg_hub_v2.1.0.zip`
 2. 爱语 → 插件管理 → 本地导入 → 选中它
 3. 权限全给：`register_instruction`、`inject_system_prompt`、`access_network`、`read_app_files`、`write_app_files`
 
 **之后：两种装法**
 
-*页面装*：扩展 → 插件源 → 打开 → 粘贴 GitHub 链接（`owner/repo` 或 `plugins.json` 地址）→ 选插件 → 安装。装前会列出权限。
+*页面装*：扩展 → 插件源 → 打开 → 选加速通道（默认自动）→ 粘贴 GitHub 链接（`owner/repo` 或 `plugins.json` 地址）→ 载入 → 选插件 → 安装。装前会列出权限。
 
 *聊天装*：
 
@@ -32,7 +32,7 @@
 .
 ├── plugins.json          # 索引，插件只读这一个文件
 └── zips/
-    ├── pkg_hub_v2.0.0.zip
+    ├── pkg_hub_v2.1.0.zip
     ├── aiyu_heart_v1.1.0.zip
     ├── aiyu_image_downloader_v1.0.0.zip
     └── aiyu_token_viewer_v2.2.1.zip
@@ -72,7 +72,7 @@
 
 ## 关于访问
 
-国内直连 `raw.githubusercontent.com` 常常不通，插件内置了三级回退：**GitHub 代理 → jsDelivr → 直连**，并记住上次成功的通道。代理是否可用因网络而异，可在聊天里发 `<pkg:proxy test>` 自查。
+国内直连 `raw.githubusercontent.com` 常常不通。打开「插件源」页面，在**加速通道**那一栏点一个地址即可（自动 / gh-proxy / dpik / edgeone / hk / jsDelivr / 直连），点「测速」会显示每个通道的延迟，选择会被记住。聊天里不需要也不应该管这些，AI 只用 `<pkg:install>` 下载安装。
 
 ## 校验
 
