@@ -6,22 +6,25 @@
 
 **第一次（引导安装）**
 
-1. 下载 `zips/pkg_hub_v1.1.1.zip`
+1. 下载 `zips/pkg_hub_v2.0.0.zip`
 2. 爱语 → 插件管理 → 本地导入 → 选中它
-3. 权限全给：`register_instruction`、`inject_system_prompt`、`access_network`
+3. 权限全给：`register_instruction`、`inject_system_prompt`、`access_network`、`read_app_files`、`write_app_files`
 
-**之后（全部在聊天里）**
+**之后：两种装法**
+
+*页面装*：扩展 → 插件源 → 打开 → 粘贴 GitHub 链接（`owner/repo` 或 `plugins.json` 地址）→ 选插件 → 安装。装前会列出权限。
+
+*聊天装*：
 
 ```
-原样输出 <pkg:source HuaiMeng01/aiyu-plugins>
-原样输出 <pkg:list>
-原样输出 <pkg:info 爱心代码>
-原样输出 <pkg:url 爱心代码>
+原样输出 <pkg:install 爱心代码>
+原样输出 <pkg:install https://…/xxx.zip>
+原样输出 <pkg:installed>
 ```
 
-`<pkg:url>` 给出的是套了可用代理的下载直链，拿到后用「插件管理 → 本地导入」装上。
+也可以直接说「帮我装一下爱心代码」，AI 会自己发指令。
 
-指令没反应或报格式错误时，发 `<pkg:diag>` 自检：它会把「原生返回 → 解析后源 → 候选地址 → 实际拉取」摊开。
+装完**重启爱语**，到「扩展 → 模块」即可看到。
 
 ## 目录结构
 
@@ -29,7 +32,7 @@
 .
 ├── plugins.json          # 索引，插件只读这一个文件
 └── zips/
-    ├── pkg_hub_v1.1.1.zip
+    ├── pkg_hub_v2.0.0.zip
     ├── aiyu_heart_v1.1.0.zip
     ├── aiyu_image_downloader_v1.0.0.zip
     └── aiyu_token_viewer_v2.2.1.zip
