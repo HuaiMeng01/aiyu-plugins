@@ -1,16 +1,16 @@
 {
   "name": "爱语插件源",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "updated_at": "2026-11-23",
   "description": "个人维护的爱语插件索引，含官方示例与自研插件",
   "plugins": [
     {
       "id": "pkg_hub",
       "name": "插件源",
-      "version": "2.1.1",
+      "version": "2.1.2",
       "author": "HuaiMeng01",
       "description": "从 GitHub 浏览并安装爱语插件。加速通道在插件源页面里直接选，装前先看权限清单。",
-      "zip": "zips/pkg_hub_v2.1.1.zip",
+      "zip": "zips/pkg_hub_v2.1.2.zip",
       "permissions": [
         "register_instruction",
         "inject_system_prompt",
@@ -19,8 +19,8 @@
         "write_app_files"
       ],
       "repo": "https://github.com/HuaiMeng01/aiyu-plugins",
-      "sha256": "dfbf6fcb5692b1dd21749244f92b58a71bdc5350796306079d08deec48fef190",
-      "bytes": 43885
+      "sha256": "d0e6e41a03880c22f85d5ff68084f3bea0ddc1b6945c34f6dacc98382fc39c59",
+      "bytes": 44540
     },
     {
       "id": "heart_love",

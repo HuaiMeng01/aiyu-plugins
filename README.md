@@ -6,7 +6,7 @@
 
 **第一次（引导安装）**
 
-1. 下载 `zips/pkg_hub_v2.1.1.zip`
+1. 下载 `zips/pkg_hub_v2.1.2.zip`
 2. 爱语 → 插件管理 → 本地导入 → 选中它
 3. 权限全给：`register_instruction`、`inject_system_prompt`、`access_network`、`read_app_files`、`write_app_files`
 
@@ -32,7 +32,7 @@
 .
 ├── plugins.json          # 索引，插件只读这一个文件
 └── zips/
-    ├── pkg_hub_v2.1.1.zip
+    ├── pkg_hub_v2.1.2.zip
     ├── aiyu_heart_v1.1.0.zip
     ├── aiyu_image_downloader_v1.0.0.zip
     └── aiyu_token_viewer_v2.2.1.zip
